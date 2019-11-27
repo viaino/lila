@@ -1,5 +1,8 @@
 body {
 	line-height: 2.0;
+	font-family: 'Noto Serif JP', serif;
+	font-family: 'Ibarra Real Nova', serif;
+
 }
 .fullScreen {
 	height: 100vh;
@@ -34,22 +37,22 @@ body {
 }
 
 .overlay-box::before{
-    background-color: rgba(0,0,0,0.5);
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    content: ' ';
-    z-index: 79;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	content: ' ';
+	z-index: 79;
 }
 .overlay-child {
-    z-index: 80;
-    position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
+	z-index: 80;
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
 }
 .cancelBtn {
 	background-color: #ffffff;
