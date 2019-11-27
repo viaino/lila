@@ -12,14 +12,23 @@
 
   <title>Awesome digital creative</title>
 </head>
-<body>
+<body class="container-fluid">
   <header class="fixed-top" style="left: 20px;top: 20px;">
-    <img src="assets/images/logo/logo.svg" style="height: 50px;">
+    <img src="assets/images/logo/logo.svg" style="height: 50px;z-index: 78;">
   </header>
   <div class="fullScreen text-center position-relative">
     <div class="wrp">
       <h4 class="m-0">Welsome to LiLA</h4>
       <p class="m-0">Now we ready to start</p>
+      <p class="mt-4">お問い合わせは<span style="border-bottom: 1px solid black;padding-bottom: 10px;" onclick="openBox()">コチラ</span></p>
+    </div>
+  </div>
+
+
+  <div id="contact" class="d-none form-wrp overlay-box p-4">
+    <div class="overlay-child pt-5">
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSehVq-JuogFGjW1uMWt57Uw9zZuYKieX7ExWP3RjRiYyITuBg/viewform?embedded=true" width="100%" height="500" frameborder="0" marginheight="0" marginwidth="0">読み込んでいます…</iframe>
+      <p class="text-center mt-3"><span class="cancelBtn" onclick="openBox()">キャンセル</span></p>
     </div>
   </div>
 
