@@ -87,6 +87,7 @@ h1,h2,h3,h4,h5,h6 {
 	margin: auto;
 	font-size: 120px;
 	opacity: 0.1;
+	-khtml-opacity: 0.1;
 	width: 100%;
 }
 .navbar-toggler {
