@@ -1,61 +1,94 @@
 body {
 	line-height: 2.0;
-	font-family: 'Noto Serif JP', serif;
-	font-family: 'Ibarra Real Nova', serif;
+	font-size: 14px;
+/*font-family: 'Ibarra Real Nova', serif;*/
+/*font-family: 'Nanum Myeongjo', serif;*/
+font-family: 'Noto Sans SC', sans-serif;
+}
 
+h1,h2,h3,h4,h5,h6 {
+	line-height: 2.0;
+	font-family: 'Shadows Into Light', cursive;
+	letter-spacing: 2px;
 }
 .fullScreen {
 	height: 100vh;
 	width: 100vw;
 }
-.wrp {
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
+.mw800 {
+	max-width: 900px;
 	margin: auto;
-	width: 80%;
-	height: 3.2rem;
 }
-
-.form-wrp {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	width: 100%;
+.bkDeepDark {
+	background: linear-gradient(160deg, #505050, #000000);
+	color: #ffffff;
 }
-.form-wrp::before {
+.bkDark {
+	background: linear-gradient(120deg, #1f1f1fd6, #000000eb);
+	color: #ffffff;
+}
+.subTitle h3 {
+	position: absolute;
+	bottom: -15px;
+}
+.subTitle h1 {
+	opacity: 0.1;
+	font-size: 50px;
+}
+.bkImg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.overlayGraPurple::before {
 	position: absolute;
 	top: 0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	background-color: red;
-}
-
-.overlay-box::before{
-	background-color: rgba(0,0,0,0.5);
-	position: absolute;
-	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
-	content: ' ';
+	background: linear-gradient(120deg, #ce00ffd6, #00ffffeb);
+	content: '';
 	z-index: 79;
 }
-.overlay-child {
-	z-index: 80;
-	position: relative;
+.overlayGraOrange::before {
+	position: absolute;
 	top: 0;
 	right: 0;
 	bottom: 0;
 	left: 0;
+	background: linear-gradient(120deg, #00e412d6, #0073ffeb);
+	content: '';
+	z-index: 79;
 }
-.cancelBtn {
-	background-color: #ffffff;
-	padding: 10px 40px;
-	border-radius: 50px;
+.overlayChild {
+	z-index: 80;
+	position: relative;
+}
+.colorWhite {
+	color: #ffffff;
+}
+.colorGraOrange {
+	background-image: linear-gradient(135deg, #e401ff 0%, #ffc200 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.bkLightGray {
+	background-color: #e2e2e2;
+}
+.border-top {
+	border-top: 1px solid black !important;
+}
+.shadowBlack {
+	box-shadow: 5px 5px 15px #00000038;
+}
+.topLiLA {
+	position: absolute;
+	line-height: 95vh;
+	margin: auto;
+	font-size: 120px;
+	opacity: 0.1;
+	width: 100%;
+}
+.navbar-toggler {
+	border: none !important;
 }
